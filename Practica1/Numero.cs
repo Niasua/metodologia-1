@@ -12,8 +12,7 @@ namespace Practica1
             this.valor = v;
         }
 
-        // métodos
-        // métodos implementados por la interface Comparable
+        // métodos implementados desde la interface Comparable
         public bool sosIgual(Comparable c){
             return this.valor == ((Numero)c).valor; 
         }
@@ -24,7 +23,7 @@ namespace Practica1
             return this.valor < ((Numero)c).valor;
         }
 
-        //método para obtener el valor
+        // métodos propios
         public int getValor() {
             return this.valor;
         }
