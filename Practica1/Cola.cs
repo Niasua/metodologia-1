@@ -2,6 +2,7 @@ using System;
 
 namespace Practica1
 {
+    // Se implementó Cola (Ejercicio 4)
     public class Cola : Coleccionable {
 
         private List<Comparable> elementos;
