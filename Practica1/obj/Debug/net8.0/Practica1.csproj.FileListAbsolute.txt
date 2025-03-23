@@ -1,0 +1,15 @@
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/bin/Debug/net8.0/Practica1
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/bin/Debug/net8.0/Practica1.deps.json
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/bin/Debug/net8.0/Practica1.runtimeconfig.json
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/bin/Debug/net8.0/Practica1.dll
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/bin/Debug/net8.0/Practica1.pdb
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/obj/Debug/net8.0/Practica1.GeneratedMSBuildEditorConfig.editorconfig
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/obj/Debug/net8.0/Practica1.AssemblyInfoInputs.cache
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/obj/Debug/net8.0/Practica1.AssemblyInfo.cs
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/obj/Debug/net8.0/Practica1.csproj.CoreCompileInputs.cache
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/obj/Debug/net8.0/Practica1.sourcelink.json
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/obj/Debug/net8.0/Practica1.dll
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/obj/Debug/net8.0/refint/Practica1.dll
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/obj/Debug/net8.0/Practica1.pdb
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/obj/Debug/net8.0/Practica1.genruntimeconfig.cache
+/home/niasua/unaj/Metodologia-1/Practicas/Practica1/obj/Debug/net8.0/ref/Practica1.dll
