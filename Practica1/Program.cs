@@ -4,12 +4,18 @@ namespace Practica1
 {
     public class Program {
         static void Main(string[] args) {
+            
             Pila pila1 = new Pila();
             Cola cola1 = new Cola();
+
+            // se instancia ColeccionMultiple en main (Ejercicio 9)
+            ColeccionMultiple colMul1 = new ColeccionMultiple(pila1, cola1);
+
             llenar(pila1);
             llenar(cola1);
             informar(pila1);
             informar(cola1);
+            informar(colMul1);
         }
 
         // Ejercicio 6
