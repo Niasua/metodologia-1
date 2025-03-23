@@ -13,6 +13,20 @@ namespace Practica1 {
             this.promedio = promedio;
         }
 
+        // no es necesario volver a implementar los metodos de la superclase
+        // Se reimplementan para que se pueda comparar con el legajo (Ejercicio 14)
+
+        public bool sosIgual(Comparable c) {
+            return this.legajo == ((Alumno)c).legajo; 
+        }
+        public bool sosMayor(Comparable c) {
+            return this.legajo > ((Alumno)c).legajo; 
+        }
+        public bool sosMenor(Comparable c) {
+            return this.legajo < ((Alumno)c).legajo;             
+        }
+
+
         // metodos propios
         public int getLegajo() {
             return this.legajo;
@@ -22,6 +36,9 @@ namespace Practica1 {
             return this.promedio;
         }
 
-        // no es necesario volver a implementar los metodos de la superclase
+        // Sobreescritura del método ToString()
+        public override string ToString() {
+            return this.legajo.ToString();
+        }
     }
 }
