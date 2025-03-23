@@ -27,5 +27,10 @@ namespace Practica1
         public int getValor() {
             return this.valor;
         }
+
+        // Sobreescritura del método ToString()
+        public override string ToString() {
+            return this.valor.ToString();
+        }
     }
 }
