@@ -16,13 +16,13 @@ namespace Practica1 {
         // no es necesario volver a implementar los metodos de la superclase
         // Se reimplementan para que se pueda comparar con el legajo (Ejercicio 14)
 
-        public bool sosIgual(Comparable c) {
+        public override bool sosIgual(Comparable c) {
             return this.legajo == ((Alumno)c).legajo; 
         }
-        public bool sosMayor(Comparable c) {
+        public override bool sosMayor(Comparable c) {
             return this.legajo > ((Alumno)c).legajo; 
         }
-        public bool sosMenor(Comparable c) {
+        public override bool sosMenor(Comparable c) {
             return this.legajo < ((Alumno)c).legajo;             
         }
 

@@ -15,13 +15,13 @@ namespace Practica1 {
 
 
         // metodos implementados desde Comparable
-        public bool sosIgual(Comparable c) {
+        public virtual bool sosIgual(Comparable c) {
             return this.dni == ((Persona)c).dni; 
         }
-        public bool sosMayor(Comparable c) {
+        public virtual bool sosMayor(Comparable c) {
             return this.dni > ((Persona)c).dni; 
         }
-        public bool sosMenor(Comparable c) {
+        public virtual bool sosMenor(Comparable c) {
             return this.dni < ((Persona)c).dni; 
         }
 
