@@ -1,11 +1,30 @@
 {
   "version": 3,
   "targets": {
-    "net8.0": {}
+    "net8.0": {
+      "Practica1/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v8.0",
+        "compile": {
+          "bin/placeholder/Practica1.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Practica1.dll": {}
+        }
+      }
+    }
   },
-  "libraries": {},
+  "libraries": {
+    "Practica1/1.0.0": {
+      "type": "project",
+      "path": "../Practica1/Practica1.csproj",
+      "msbuildProject": "../Practica1/Practica1.csproj"
+    }
+  },
   "projectFileDependencyGroups": {
-    "net8.0": []
+    "net8.0": [
+      "Practica1 >= 1.0.0"
+    ]
   },
   "packageFolders": {
     "C:\\Users\\Nico\\.nuget\\packages\\": {}
@@ -31,7 +50,11 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
-          "projectReferences": {}
+          "projectReferences": {
+            "c:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj": {
+              "projectPath": "c:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj"
+            }
+          }
         }
       },
       "warningProperties": {
