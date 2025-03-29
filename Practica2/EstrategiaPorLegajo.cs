@@ -1,5 +1,4 @@
 using System;
-using Practica1;
 
 // Ejercicio 1
 namespace Practica2 {
