@@ -66,5 +66,18 @@ namespace Practica2 {
         public Comparable getElemento(int indice) {
             return this.conjunto[indice];
         }
+
+        public override string ToString() {
+            string resultado = "{";
+            for (int i = 0; i < conjunto.Count; i++) {
+                resultado += conjunto[i].ToString();
+                if (i < conjunto.Count - 1) {
+                    resultado += ", ";
+                }
+            }
+            resultado += "}";
+            return resultado;
+        }
+
     }
 }

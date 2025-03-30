@@ -72,5 +72,19 @@ namespace Practica2
         public Comparable getElemento(int indice) {
             return this.elementos[indice];
         }
+
+        // Sobreescritura del método ToString()
+        public override string ToString() {
+            string resultado = "[";
+            for (int i = 0; i < elementos.Count; i++) {
+                resultado += elementos[i].ToString();
+                if (i < elementos.Count - 1) {
+                    resultado += ", ";
+                }
+            }
+            resultado += "]";
+            return resultado;
+        }
+
     }
 }

@@ -4,17 +4,16 @@ namespace Practica2
 {
     public class Program {
         static void Main(string[] args) {
-            
+            // ejercicio 7 practica 2
             Pila pila1 = new Pila();
             Cola cola1 = new Cola();
-
-            ColeccionMultiple colMul1 = new ColeccionMultiple(pila1, cola1);
-
+            Conjunto conjunto1 = new Conjunto();
 
             llenarAlumnos(pila1, new EstrategiaPorLegajo()); 
             llenarAlumnos(cola1, new EstrategiaPorDni());
+            llenarAlumnos(conjunto1, new EstrategiaPorLegajo());
 
-            informar(colMul1);
+            imprimirElementos(conjunto1);
         }
 
         public static void informar(Coleccionable coleccionable) {
@@ -44,6 +43,15 @@ namespace Practica2
                 Alumno nuevoComparable = new Alumno("Jorge", i, i, i);
                 nuevoComparable.setEstrategia(estrategia);
                 coleccionable.agregar(nuevoComparable);
+            }
+        }
+
+        public static void imprimirElementos(Coleccionable col) {
+            Iterador ite = col.crearIterador();
+            ite.primero();
+            while(!ite.fin()) {
+                Console.WriteLine(ite.actual());
+                ite.siguiente();
             }
         }
     }

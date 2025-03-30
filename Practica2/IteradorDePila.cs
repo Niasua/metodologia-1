@@ -22,5 +22,7 @@ namespace Practica2 {
         public Comparable actual() {
             return this.p.getElemento(this.indice);
         }
+
+        
     }
 }

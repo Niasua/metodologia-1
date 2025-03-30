@@ -22,5 +22,6 @@ namespace Practica2 {
         public Comparable actual() {
             return this.cola.getElemento(this.indice);
         }
+        
     }
 }
