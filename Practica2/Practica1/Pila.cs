@@ -10,6 +10,12 @@ namespace Practica2
             this.elementos = new List<Comparable>();
         }
 
+        // implementado desde interface Iterable
+        public Iterador crearIterador() {
+            return new IteradorDePila(this);
+        }
+
+
         // implementados desde interface Coleccionable
         public int cuantos(){
             return this.elementos.Count;

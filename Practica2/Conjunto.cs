@@ -10,6 +10,11 @@ namespace Practica2 {
             this.conjunto = new List<Comparable>();
         }
 
+        // implementado desde interface Iterable
+        public Iterador crearIterador() {
+            return new IteradorDeConjunto(this);
+        }
+
         // metodos implementados desde Coleccionable
         public int cuantos() {
             return this.conjunto.Count;
@@ -55,6 +60,11 @@ namespace Practica2 {
                 }
             }
             return false;        
+        }
+
+        // getter
+        public Comparable getElemento(int indice) {
+            return this.conjunto[indice];
         }
     }
 }

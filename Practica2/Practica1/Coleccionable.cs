@@ -2,7 +2,7 @@ using System;
 
 namespace Practica2
 {
-    public interface Coleccionable {
+    public interface Coleccionable : Iterable {
         int cuantos();
         Comparable minimo();
         Comparable maximo();

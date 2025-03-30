@@ -11,6 +11,11 @@ namespace Practica2
             this.elementos = new List<Comparable>();
         }
 
+        // implementado desde interface Iterable
+        public Iterador crearIterador() {
+            return new IteradorDeCola(this);
+        }
+
         // implementados desde interface Coleccionable
         public int cuantos() {
             return elementos.Count;
@@ -18,7 +23,7 @@ namespace Practica2
         public Comparable minimo() {
             Comparable minimo = elementos[0];
             for (int i = 0; i < elementos.Count; i++) {
-                if (minimo.sosMenor(elementos[i]))
+                if (minimo.sosMayor(elementos[i]))
                     minimo = elementos[i];
             }
             return minimo;
@@ -26,7 +31,7 @@ namespace Practica2
         public Comparable maximo() {
             Comparable maximo = elementos[0];
             for (int i = 0; i < elementos.Count; i++) {
-                if (maximo.sosMayor(elementos[i]))
+                if (maximo.sosMenor(elementos[i]))
                     maximo = elementos[i];
             }
             return maximo;
@@ -54,6 +59,11 @@ namespace Practica2
             Comparable aux = elementos[0];
             elementos.RemoveAt(0);
             return aux;
+        }
+
+        // getter
+        public Comparable getElemento(int indice) {
+            return this.elementos[indice];
         }
     }
 }
