@@ -2,23 +2,59 @@ using System;
 
 // Ejercicio 3 Practica 2
 namespace Practica2 {
-    public class Conjunto {
-        // tipo object para que sea mas flexible
-        private List<object> conjunto;
+    public class Conjunto : Coleccionable {
+        private List<Comparable> conjunto;
 
         // constructor
         public Conjunto() {
-            this.conjunto = new List<object>();
+            this.conjunto = new List<Comparable>();
+        }
+
+        // metodos implementados desde Coleccionable
+        public int cuantos() {
+            return this.conjunto.Count;
+        }
+
+        public Comparable minimo() {
+            Comparable minimo = this.conjunto[0];
+            for(int i = 1; i < this.conjunto.Count; i++) {
+                if(this.conjunto[i].sosMenor(minimo)) {
+                    minimo = this.conjunto[i];
+                }
+            }
+            return minimo;
+        }
+
+        public Comparable maximo() {
+            Comparable maximo = this.conjunto[0];
+            for(int i = 1; i < this.conjunto.Count; i++) {
+                if(this.conjunto[i].sosMayor(maximo)) {
+                    maximo = this.conjunto[i];
+                }
+            }
+            return maximo;
+        }
+
+        public void agregar(Comparable c) {
+            if (!pertenece(c)) {
+                conjunto.Add(c); 
+            }        
+        }
+
+        public bool contiene (Comparable c) {
+            return pertenece(c);
         }
 
         // metodos propios
-        public void agregar(object elemento) {
-            if (!pertenece(elemento)) {
-                conjunto.Add(elemento); 
+        // agregar esta en los implementados
+
+        public bool pertenece(Comparable elemento) {
+            for (int i = 0; i < conjunto.Count ; i++) {
+                if(elemento.sosIgual(conjunto[i])){ 
+                    return true;
+                }
             }
-        }
-        public bool pertenece(object elemento) {
-            return conjunto.Contains(elemento);
+            return false;        
         }
     }
 }
