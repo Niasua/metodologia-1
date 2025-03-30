@@ -61,5 +61,10 @@ namespace Practica2
             elementos.RemoveAt(elementos.Count - 1);
             return ultimoElemento;
         }
+
+        // getter
+        public Comparable getElemento(int indice) {
+            return this.elementos[indice];
+        }
     }
 }
