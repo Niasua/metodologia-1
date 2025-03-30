@@ -4,16 +4,30 @@ namespace Practica2
 {
     public class Program {
         static void Main(string[] args) {
-            // ejercicio 7 practica 2
+            // ejercicio 9 practica 2
             Pila pila1 = new Pila();
-            Cola cola1 = new Cola();
-            Conjunto conjunto1 = new Conjunto();
+            llenarAlumnos(pila1, new EstrategiaPorDni()); 
 
-            llenarAlumnos(pila1, new EstrategiaPorLegajo()); 
-            llenarAlumnos(cola1, new EstrategiaPorDni());
-            llenarAlumnos(conjunto1, new EstrategiaPorLegajo());
+            cambiarEstrategia(pila1, new EstrategiaPorNombre());
+            informar(pila1);
 
-            imprimirElementos(conjunto1);
+            cambiarEstrategia(pila1, new EstrategiaPorLegajo());
+            informar(pila1);
+
+            cambiarEstrategia(pila1, new EstrategiaPorPromedio());
+            informar(pila1);
+
+            cambiarEstrategia(pila1, new EstrategiaPorDni());
+            informar(pila1);
+
+            // ejercicio 7 practica 2
+            // Cola cola1 = new Cola();
+            // Conjunto conjunto1 = new Conjunto();
+
+            // llenarAlumnos(cola1, new EstrategiaPorDni());
+            // llenarAlumnos(conjunto1, new EstrategiaPorLegajo());
+
+            // imprimirElementos(conjunto1);
         }
 
         public static void informar(Coleccionable coleccionable) {
@@ -51,6 +65,16 @@ namespace Practica2
             ite.primero();
             while(!ite.fin()) {
                 Console.WriteLine(ite.actual());
+                ite.siguiente();
+            }
+        }
+        // ejercicio 8 practica 2
+        public static void cambiarEstrategia(Coleccionable coleccion, EstrategiaDeComparacion estrategia) {
+            Iterador ite = coleccion.crearIterador();
+            ite.primero();
+            while(!ite.fin()) {
+                Alumno alumnoActual = (Alumno) ite.actual();
+                alumnoActual.setEstrategia(estrategia);
                 ite.siguiente();
             }
         }

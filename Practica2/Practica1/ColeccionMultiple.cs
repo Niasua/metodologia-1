@@ -12,6 +12,13 @@ namespace Practica2 {
             this.cola = cola;
         }
 
+        // implementado desde interface Iterable
+        // no lo pide la consigna. Completado para que no de problemas 
+        // al compilar
+        public Iterador crearIterador() {
+            return new IteradorDeCola(this.cola);
+        }
+
         // Implementaciones de Coleccionable
         public int cuantos() {
             return pila.cuantos() + cola.cuantos();

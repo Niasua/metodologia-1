@@ -4,14 +4,14 @@
     "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica2\\Practica2.csproj": {}
   },
   "projects": {
-    "c:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj": {
+    "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj",
+        "projectUniqueName": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj",
         "projectName": "Practica1",
-        "projectPath": "c:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj",
+        "projectPath": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj",
         "packagesPath": "C:\\Users\\Nico\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\obj\\",
+        "outputPath": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Nico\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -84,8 +84,8 @@
           "net8.0": {
             "targetAlias": "net8.0",
             "projectReferences": {
-              "c:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj": {
-                "projectPath": "c:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj"
+              "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj": {
+                "projectPath": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica1\\Practica1.csproj"
               }
             }
           }
