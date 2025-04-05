@@ -5,21 +5,36 @@ namespace Practica3 {
         static void Main(string[] args) {
             
             Pila pila1 = new Pila();
-            Cola cola1 = new Cola();
+            // Cola cola1 = new Cola();
 
             // se instancia ColeccionMultiple en main (Ejercicio 9)
-            ColeccionMultiple colMul1 = new ColeccionMultiple(pila1, cola1);
+
+            // ColeccionMultiple colMul1 = new ColeccionMultiple(pila1, cola1);
+
+            Profesor profe = new Profesor(" Mauro", 1234, 4); // hacer bien con fabricas
 
             // ejercicio 7
             // llenar(pila1);
             // llenar(cola1);
 
-            llenarAlumnos(pila1); 
-            llenarAlumnos(cola1);
+            llenar(pila1, 2); 
+            // llenarAlumnos(cola1);
+
+            Iterador ite = pila1.crearIterador();
+            ite.primero();
+            while(!ite.fin()) {
+                profe.agregarObservador((Observador)ite.actual());
+                ite.siguiente();
+            }
+
+            dictadoDeClase(profe);
 
             informar(pila1, 2);
-            informar(cola1, 2);
-            informar(colMul1, 2);
+
+            // informar(cola1, 2);
+            // informar(colMul1, 2);
+
+
         }
 
 
@@ -57,7 +72,7 @@ namespace Practica3 {
 
         // Ejercicio 6 Practica 3
         public static void llenar(Coleccionable coleccionable, int opcion) {
-            for (int i = 0; i < 20; i++) {
+            for (int i = 0; i < 2; i++) {
                 Comparable nuevoComparable = FabricaDeComparables.crearAleatorio(opcion);
                 coleccionable.agregar(nuevoComparable);
             }
@@ -68,6 +83,15 @@ namespace Practica3 {
             for (int i = 0; i < 20; i++) {
                 Comparable nuevoComparable = FabricaDeComparables.crearAleatorio(2);
                 coleccionable.agregar(nuevoComparable);
+            }
+        }
+
+        // Ejercicio 13 Practica 3
+
+        public static void dictadoDeClase(Profesor profe) {
+            for(int i = 0; i < 5; i++) {
+                profe.hablarALaClase();
+                profe.escribirEnElPizarron();
             }
         }
     }
