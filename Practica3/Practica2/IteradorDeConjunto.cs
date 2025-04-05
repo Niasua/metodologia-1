@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica2 {
+namespace Practica3 {
     public class IteradorDeConjunto : Iterador {
         private Conjunto conjunto;
         private int indice;

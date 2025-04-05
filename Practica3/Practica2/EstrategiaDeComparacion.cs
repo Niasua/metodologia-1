@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica2 {
+namespace Practica3 {
     // Ejercicio 1
     public interface EstrategiaDeComparacion {
         bool sosIgual(Comparable c1, Comparable c2);

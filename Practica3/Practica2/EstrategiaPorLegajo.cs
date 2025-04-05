@@ -1,7 +1,7 @@
 using System;
 
 // Ejercicio 1
-namespace Practica2 {
+namespace Practica3 {
     public class EstrategiaPorLegajo : EstrategiaDeComparacion {
         // metodos implementados desde EstrategiaDeComparacion
         public bool sosIgual(Comparable c1, Comparable c2) {

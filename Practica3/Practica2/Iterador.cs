@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica2 {
+namespace Practica3 {
     public interface Iterador {
         void primero();
         void siguiente();
