@@ -40,13 +40,13 @@ namespace Practica3 {
 
         //metodos propios
         public void hablarALaClase() {
-            Console.WriteLine("Hablando de algún tema");
+            Console.WriteLine("\nHablando de algún tema\n");
             this.hablando = true;
             this.notificar();
         }
 
         public void escribirEnElPizarron() {
-            Console.WriteLine("Escribiendo en el pizarrón");   
+            Console.WriteLine("\nEscribiendo en el pizarrón\n");   
             this.hablando = false;
             this.notificar();
         }

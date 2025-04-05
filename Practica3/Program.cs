@@ -7,11 +7,17 @@ namespace Practica3 {
             Pila pila1 = new Pila();
             Pila pila2 = new Pila();
 
+            Profesor profe = (Profesor) FabricaDeComparables.crearAleatorio(3);
+
             llenar(pila1, 2); // alumnos 
             llenar(pila2, 3); // profesores            
 
-            // dictadoDeClase(profe);
+            Iterador ite = pila1.crearIterador();
+            for(ite.primero(); !ite.fin(); ite.siguiente()) {
+                profe.agregarObservador((Alumno)ite.actual());
+            }
 
+            dictadoDeClase(profe);
         }
 
 
@@ -49,7 +55,7 @@ namespace Practica3 {
 
         // Ejercicio 6 Practica 3
         public static void llenar(Coleccionable coleccionable, int opcion) {
-            for (int i = 0; i < 3; i++) {
+            for (int i = 0; i < 20; i++) {
                 Comparable nuevoComparable = FabricaDeComparables.crearAleatorio(opcion);
                 coleccionable.agregar(nuevoComparable);
             }
@@ -66,7 +72,7 @@ namespace Practica3 {
         // Ejercicio 13 Practica 3
 
         public static void dictadoDeClase(Profesor profe) {
-            for(int i = 0; i < 5; i++) {
+            for(int i = 0; i < 2; i++) {
                 profe.hablarALaClase();
                 profe.escribirEnElPizarron();
             }
