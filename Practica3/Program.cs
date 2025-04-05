@@ -18,8 +18,8 @@ namespace Practica3 {
             llenarAlumnos(cola1);
 
             informar(pila1, 2);
-            informar(cola1, 1);
-            informar(colMul1, 1);
+            informar(cola1, 2);
+            informar(colMul1, 2);
         }
 
 
