@@ -5,35 +5,12 @@ namespace Practica3 {
         static void Main(string[] args) {
             
             Pila pila1 = new Pila();
-            // Cola cola1 = new Cola();
+            Pila pila2 = new Pila();
 
-            // se instancia ColeccionMultiple en main (Ejercicio 9)
+            llenar(pila1, 2); // alumnos 
+            llenar(pila2, 3); // profesores            
 
-            // ColeccionMultiple colMul1 = new ColeccionMultiple(pila1, cola1);
-
-            Profesor profe = new Profesor(" Mauro", 1234, 4); // hacer bien con fabricas
-
-            // ejercicio 7
-            // llenar(pila1);
-            // llenar(cola1);
-
-            llenar(pila1, 2); 
-            // llenarAlumnos(cola1);
-
-            Iterador ite = pila1.crearIterador();
-            ite.primero();
-            while(!ite.fin()) {
-                profe.agregarObservador((Observador)ite.actual());
-                ite.siguiente();
-            }
-
-            dictadoDeClase(profe);
-
-            informar(pila1, 2);
-
-            // informar(cola1, 2);
-            // informar(colMul1, 2);
-
+            // dictadoDeClase(profe);
 
         }
 
@@ -72,7 +49,7 @@ namespace Practica3 {
 
         // Ejercicio 6 Practica 3
         public static void llenar(Coleccionable coleccionable, int opcion) {
-            for (int i = 0; i < 2; i++) {
+            for (int i = 0; i < 3; i++) {
                 Comparable nuevoComparable = FabricaDeComparables.crearAleatorio(opcion);
                 coleccionable.agregar(nuevoComparable);
             }

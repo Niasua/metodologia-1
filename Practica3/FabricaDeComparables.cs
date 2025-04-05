@@ -17,6 +17,9 @@ namespace Practica3 {
                 case 2: // ver como crear Alumno --> Fabrica concreta
                     fabrica = new FabricaDeAlumnos();
                     break;
+                case 3:
+                    fabrica = new FabricaDeProfesores();
+                    break;
                 default:
                     break;
             }
@@ -31,6 +34,9 @@ namespace Practica3 {
                     break;
                 case 2: // ver como crear Alumno --> Fabrica concreta
                     fabrica = new FabricaDeAlumnos();
+                    break;
+                case 3:
+                    fabrica = new FabricaDeProfesores();
                     break;
                 default:
                     break;
