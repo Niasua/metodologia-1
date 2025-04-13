@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Practica3
+namespace Practica4
 {
     public class Pila : Coleccionable {
         private List<Comparable> elementos;

@@ -1,11 +1,13 @@
 using System;
 
-namespace Practica3 {
+namespace Practica4 {
     public class Alumno : Persona, Observador {
         // atributos
         private int legajo, promedio;
         // Ejercicio 2 Practica 2
         private EstrategiaDeComparacion estrategia;
+        // Ejercicio 1 Practica 4
+        private int calificacion;
 
 
         // constructor
@@ -53,6 +55,15 @@ namespace Practica3 {
             this.estrategia = estrategia;
         }
 
+        // EJercicio 1 Practica 4
+        public int getCalificacion() {
+            return this.calificacion;
+        }
+
+        public void setCalificacion(int nvaCalificacion) {
+            this.calificacion = nvaCalificacion;
+        }
+
         // Sobreescritura del método ToString()
         public override string ToString() {
             return this.legajo.ToString();
@@ -67,6 +78,16 @@ namespace Practica3 {
             Random rdn = new Random();
             string[] frases = new string[]{"Mirando el celular", "Dibujando en el margen de la carpeta", "Tirando aviones de papel"};
             Console.WriteLine(frases[rdn.Next(0,2)]);
+        }
+
+        // Ejercicio 1 Practica 4
+        public virtual int responderPregunta(int pregunta) {
+            Random rnd = new Random();
+            return rnd.Next(1,3);
+        }
+
+        public string mostrarCalificacion(){
+            return this.nombre + "\t" + this.calificacion;
         }
     }
 }

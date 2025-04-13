@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica3 {
+namespace Practica4 {
     public abstract class Persona : Comparable {
         // atributos
         protected string nombre;
