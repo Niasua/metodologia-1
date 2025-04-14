@@ -4,9 +4,9 @@ using MetodologíasDeProgramaciónI;
 namespace Practica4 {
     // Ejercicio 3 Practica 4
     public class AlumnoAdapter : Student {
-        private Alumno alumno;
+        private IAlumno alumno;
 
-        public AlumnoAdapter(Alumno alumno) {
+        public AlumnoAdapter(IAlumno alumno) {
             this.alumno = alumno;
         }
 

@@ -1,7 +1,7 @@
 using System;
 
 namespace Practica4 {
-    public class Alumno : Persona, Observador {
+    public class Alumno : Persona, Observador, IAlumno {
         // atributos
         private int legajo, promedio;
         // Ejercicio 2 Practica 2
