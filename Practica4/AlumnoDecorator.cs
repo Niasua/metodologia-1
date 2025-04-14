@@ -44,7 +44,7 @@ namespace Practica4 {
         public int responderPregunta(int pregunta) {
             return this.adicional.responderPregunta(pregunta);
         }
-        public string mostrarCalificacion() {
+        public virtual string mostrarCalificacion() {
             return this.adicional.mostrarCalificacion();
         }
 
