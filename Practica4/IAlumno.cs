@@ -4,17 +4,17 @@ using MetodologíasDeProgramaciónI;
 namespace Practica4 {
     public interface IAlumno : Comparable {
 
-        public void actualizar(Observado o);       
-        public int getLegajo();
-        public int getPromedio();
-        public string getNombre();
-        public void setEstrategia(EstrategiaDeComparacion estrategia);
-        public int getCalificacion();
-        public void setCalificacion(int nvaCalificacion);
-        public string ToString();
-        public void prestarAtencion();
-        public void distraerse();
-        public int responderPregunta(int pregunta);
-        public string mostrarCalificacion();
+        void actualizar(Observado o);       
+        int getLegajo();
+        int getPromedio();
+        string getNombre();
+        void setEstrategia(EstrategiaDeComparacion estrategia);
+        int getCalificacion();
+        void setCalificacion(int nvaCalificacion);
+        string ToString();
+        void prestarAtencion();
+        void distraerse();
+        int responderPregunta(int pregunta);
+        string mostrarCalificacion();
     }
 }
