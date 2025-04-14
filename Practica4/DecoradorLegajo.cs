@@ -7,10 +7,8 @@ namespace Practica4 {
         public DecoradorLegajo(IAlumno alumno) : base(alumno) {}
 
         public override string mostrarCalificacion() {
-            string resultado = base.mostrarCalificacion();
-            int index = resultado.IndexOf(" " + adicional.getCalificacion()); 
-            resultado = resultado.Insert(index, " (" + adicional.getLegajo() + ")"); 
-            return resultado;
+            return adicional.getNombre() + " (" + adicional.getLegajo() + ") " + adicional.getCalificacion();
         }
+
     }
 }

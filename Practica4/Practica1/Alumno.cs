@@ -22,13 +22,13 @@ namespace Practica4 {
         // Se reimplementan para que se pueda comparar con el legajo usando la nueva estrategia
         // por legajo (ejercicio 2 practica 2) 
         public override bool sosIgual(Comparable c) {
-            return this.estrategia.sosIgual(this, (Alumno)c);
+            return this.estrategia.sosIgual(this, (IAlumno)c);
         }
         public override bool sosMayor(Comparable c) {
-            return this.estrategia.sosMayor(this, (Alumno)c);
+            return this.estrategia.sosMayor(this, (IAlumno)c);
         }
         public override bool sosMenor(Comparable c) {
-            return this.estrategia.sosMenor(this, (Alumno)c);
+            return this.estrategia.sosMenor(this, (IAlumno)c);
         }
 
         // metodo implementado desde Observador (Ejercicio 12 Practica 3)

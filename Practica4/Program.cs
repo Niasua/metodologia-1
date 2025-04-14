@@ -12,21 +12,22 @@ namespace Practica3 {
                     Alumno alumno = (Alumno) new FabricaDeAlumnos().crearAleatorio();
                     // Ejercicio 5 Practica 4 (Estableciendo estrategia de comparacion)
                     alumno.setEstrategia(new EstrategiaPorCalificacion());
-                    Student student = new AlumnoAdapter(alumno);
+                    // Se agrega el alumno decorado
+                    IAlumno alumnoDecorado = new StudentsFactory().aplicarDecorador(alumno);
+                    Student student = new AlumnoAdapter(alumnoDecorado);
                     teacher.goToClass(student);
                 } else {
                     AlumnoMuyEstudioso alumno = (AlumnoMuyEstudioso) new FabricaDeAlumnosMuyEstudiosos().crearAleatorio();
                     // Ejercicio 5 Practica 4 (Estableciendo estrategia de comparacion)
                     alumno.setEstrategia(new EstrategiaPorCalificacion());
-                    Student student = new AlumnoAdapter(alumno);
+                    IAlumno alumnoDecorado = new StudentsFactory().aplicarDecorador(alumno);
+                    Student student = new AlumnoAdapter(alumnoDecorado);
                     teacher.goToClass(student);
                 }
             }
 
             
             teacher.teachingAClass();
-
-            // ORDENAR CALIFICACIONES
             
         }
 

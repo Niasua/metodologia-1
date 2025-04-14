@@ -32,14 +32,14 @@ namespace Practica4 {
         public void setCalificacion(int nvaCalificacion) {
             this.adicional.setCalificacion(nvaCalificacion);
         }
-        public string ToString() {
+        public override string ToString() {
             return this.adicional.ToString();
         }
         public void prestarAtencion() {
             this.adicional.prestarAtencion();
         }
         public void distraerse() {
-            this.adicional.prestarAtencion();
+            this.adicional.distraerse();
         }
         public int responderPregunta(int pregunta) {
             return this.adicional.responderPregunta(pregunta);

@@ -2,9 +2,10 @@ using System;
 using MetodologíasDeProgramaciónI;
 
 namespace Practica4 {
+    // Ejercicio 7 Practica 4
     public class StudentsFactory : FabricaDeAlumnos {
 
-        public AlumnoDecorator aplicarDecorador(Alumno alumno) {
+        public AlumnoDecorator aplicarDecorador(IAlumno alumno) {
             AlumnoDecorator decorator = new DecoradorLegajo(alumno);
             AlumnoDecorator decorator2 = new DecoradorNotaLetras(decorator);
             AlumnoDecorator decorator3 = new DecoradorEstado(decorator2);
