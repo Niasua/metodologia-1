@@ -25,10 +25,7 @@ namespace Practica3 {
                     teacher.goToClass(student);
                 }
             }
-
-            
             teacher.teachingAClass();
-            
         }
 
 
