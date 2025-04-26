@@ -23,13 +23,13 @@ namespace Practica5 {
             return this.alumno.mostrarCalificacion();
         }
 		public bool equals(Student student) {
-            return this.alumno.sosIgual((Comparable)((AlumnoAdapter)student).alumno);
+            return this.alumno.sosIgual(((AlumnoAdapter)student).alumno);
         }
 		public bool lessThan(Student student) {
-            return this.alumno.sosMenor((Comparable)((AlumnoAdapter)student).alumno);
+            return this.alumno.sosMenor(((AlumnoAdapter)student).alumno);
         }
 		public bool greaterThan(Student student) {
-            return this.alumno.sosMayor((Comparable)((AlumnoAdapter)student).alumno);
+            return this.alumno.sosMayor(((AlumnoAdapter)student).alumno);
         }
     }
 }

@@ -76,6 +76,7 @@ namespace Practica5 {
         public int responderPregunta(int pregunta) {
             if(this.alumnoReal == null) {
                 alumnoReal = (Alumno)FabricaDeComparables.crearAleatorio(2);
+                Console.WriteLine("Se creó un alumnoReal");
             }
             return this.alumnoReal.responderPregunta(pregunta);
         }
