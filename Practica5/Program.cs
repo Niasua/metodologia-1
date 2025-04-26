@@ -47,9 +47,24 @@ namespace Practica5 {
                 }
             }
             teacher.teachingAClass();
+
+            Pila pila = new Pila();
+            Aula aula = new Aula();
+
+            pila.setOrdenInicio(new OrdenInicio(aula));
+            pila.setOrdenLlegaAlumno(new OrdenLlegaAlumno(aula));
+            pila.setOrdenAulaLlena(new OrdenAulaLlena(aula));
+
+            llenar(pila, 2);
+            llenar(pila, 4);
+
         }
 
-
-        
+        public static void llenar(Coleccionable coleccionable, int opcion) {
+            for (int i = 0; i < 20; i++) {
+                Comparable nuevoComparable = FabricaDeComparables.crearAleatorio(opcion);
+                coleccionable.agregar(nuevoComparable);
+            }
+        }
     }
 }
