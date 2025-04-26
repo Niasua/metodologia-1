@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica4 {
+namespace Practica5 {
     // Ejercicio 1
     public class EstrategiaPorDni : EstrategiaDeComparacion {
         // metodos implementados desde EstrategiaDeComparacion

@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica4 {
+namespace Practica5 {
     public class Alumno : Persona, Observador, IAlumno {
         // atributos
         private int legajo, promedio;

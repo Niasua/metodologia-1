@@ -1,7 +1,7 @@
 using System;
 using MetodologíasDeProgramaciónI;
 
-namespace Practica4 {
+namespace Practica5 {
     public class AlumnoMuyEstudioso : Alumno {
         public AlumnoMuyEstudioso(string n, int d, int legajo, int promedio) : base(n, d, legajo, promedio) {
 

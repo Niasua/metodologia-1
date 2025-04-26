@@ -1,7 +1,7 @@
 using System;
 using MetodologíasDeProgramaciónI;
 
-namespace Practica4 {
+namespace Practica5 {
     // Creado para Ejercicio 4 Practica 4
     public class FabricaDeAlumnosMuyEstudiosos : FabricaDeComparables {
         public override Comparable crearAleatorio() {

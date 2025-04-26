@@ -1,7 +1,7 @@
 using System;
 using MetodologíasDeProgramaciónI;
 
-namespace Practica4 {
+namespace Practica5 {
     public interface IAlumno : Comparable {
 
         void actualizar(Observado o);       

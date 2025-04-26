@@ -1,7 +1,7 @@
 using System;
 using System.Text;
 
-namespace Practica4 {
+namespace Practica5 {
     // Ejercicio 2
     public class GeneradorDeDatosAleatorios {
         Random random = new Random();

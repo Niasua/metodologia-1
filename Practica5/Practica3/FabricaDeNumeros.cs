@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica4 {
+namespace Practica5 {
     // Ejercicio 5
     public class FabricaDeNumeros : FabricaDeComparables {
         public override Comparable crearAleatorio() {

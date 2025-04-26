@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica4 {
+namespace Practica5 {
     public class IteradorDePila : Iterador {
         private Pila p;
         private int indice;

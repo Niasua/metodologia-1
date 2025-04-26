@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica4 {
+namespace Practica5 {
     public class IteradorDeCola : Iterador {
         private Cola cola;
         private int indice;

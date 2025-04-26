@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica4 {
+namespace Practica5{
     public interface Observador {
         void actualizar(Observado o);       
     }

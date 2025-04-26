@@ -1,7 +1,7 @@
 using System;
 using MetodologíasDeProgramaciónI;
 
-namespace Practica4 {
+namespace Practica5 {
     public class DecoradorOrdenSecuencial: AlumnoDecorator {
         private static int contador = 1;
         private int numero;

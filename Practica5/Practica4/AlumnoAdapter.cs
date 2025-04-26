@@ -1,7 +1,7 @@
 using System;
 using MetodologíasDeProgramaciónI;
 
-namespace Practica4 {
+namespace Practica5 {
     // Ejercicio 3 Practica 4
     public class AlumnoAdapter : Student {
         private IAlumno alumno;
