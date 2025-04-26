@@ -3,8 +3,11 @@ using System.Collections.Generic;
 
 namespace Practica5
 {
-    public class Pila : Coleccionable {
+    public class Pila : Coleccionable, Ordenable {
         private List<Comparable> elementos;
+        private OrdenEnAula1 ordenInicio;
+        private OrdenEnAula2 ordenLlegaAlumno;
+        private OrdenEnAula1 ordenAulaLlena;
 
         public Pila() {
             this.elementos = new List<Comparable>();
@@ -42,6 +45,14 @@ namespace Practica5
         }
         public void agregar(Comparable c){
             elementos.Add(c);
+            this.ordenInicio.ejecutar();
+            if(this.ordenLlegaAlumno != null) {
+                this.ordenLlegaAlumno.ejecutar(c);
+            }
+            if(this.cuantos() == 40 && ordenAulaLlena != null) {
+                ordenAulaLlena.ejecutar();
+            }
+
         }
         public bool contiene (Comparable c){
             // itero sobre elementos
@@ -52,6 +63,19 @@ namespace Practica5
                 }
             }
             return false;
+        }
+
+        // Implementados desde Ordenable (Practica 5)
+        public void setOrdenInicio(OrdenEnAula1 orden) {
+            this.ordenInicio = orden;
+        }
+        public void setOrdenLlegaAlumno(OrdenEnAula2 orden) {
+            this.ordenLlegaAlumno = orden;
+
+        }
+        public void setOrdenAulaLlena(OrdenEnAula1 orden) {
+            this.ordenAulaLlena = orden;
+
         }
 
         // métodos propios

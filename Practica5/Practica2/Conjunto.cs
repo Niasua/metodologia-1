@@ -2,8 +2,11 @@ using System;
 
 // Ejercicio 3 Practica 2
 namespace Practica5 {
-    public class Conjunto : Coleccionable {
+    public class Conjunto : Coleccionable, Ordenable {
         private List<Comparable> conjunto;
+        private OrdenEnAula1 ordenInicio;
+        private OrdenEnAula2 ordenLlegaAlumno;
+        private OrdenEnAula1 ordenAulaLlena;
 
         // constructor
         public Conjunto() {
@@ -44,10 +47,30 @@ namespace Practica5 {
             if (!pertenece(c)) {
                 conjunto.Add(c); 
             }        
+            this.ordenInicio.ejecutar();
+            if(this.ordenLlegaAlumno != null) {
+                this.ordenLlegaAlumno.ejecutar(c);
+            }
+            if(this.cuantos() == 40 && ordenAulaLlena != null) {
+                ordenAulaLlena.ejecutar();
+            }
         }
 
         public bool contiene (Comparable c) {
             return pertenece(c);
+        }
+
+        // Implementados desde Ordenable (Practica 5)
+        public void setOrdenInicio(OrdenEnAula1 orden) {
+            this.ordenInicio = orden;
+        }
+        public void setOrdenLlegaAlumno(OrdenEnAula2 orden) {
+            this.ordenLlegaAlumno = orden;
+
+        }
+        public void setOrdenAulaLlena(OrdenEnAula1 orden) {
+            this.ordenAulaLlena = orden;
+
         }
 
         // metodos propios

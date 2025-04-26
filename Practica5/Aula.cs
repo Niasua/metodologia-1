@@ -18,9 +18,5 @@ namespace Practica5 {
             this.teacher.teachingAClass();
         }
 
-        public Teacher GetTeacher() {
-            return this.teacher;
-        }
-
     }
 }
