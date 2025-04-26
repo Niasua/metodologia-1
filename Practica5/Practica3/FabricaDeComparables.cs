@@ -20,6 +20,9 @@ namespace Practica5 {
                 case 3:
                     fabrica = new FabricaDeProfesores();
                     break;
+                case 4: 
+                    fabrica = new FabricaDeAlumnosMuyEstudiosos();
+                    break;
                 default:
                     break;
             }
@@ -37,6 +40,9 @@ namespace Practica5 {
                     break;
                 case 3:
                     fabrica = new FabricaDeProfesores();
+                    break;
+                case 4: 
+                    fabrica = new FabricaDeAlumnosMuyEstudiosos();
                     break;
                 default:
                     break;
