@@ -2,7 +2,7 @@ using System;
 
 namespace Practica5 {
     public class OrdenLlegaAlumno : OrdenEnAula2 {
-        Aula aula;
+        private Aula aula;
         public OrdenLlegaAlumno(Aula aula) {
             this.aula = aula;
         }
