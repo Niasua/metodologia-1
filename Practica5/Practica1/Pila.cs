@@ -8,6 +8,8 @@ namespace Practica5
         private OrdenEnAula1 ordenInicio;
         private OrdenEnAula2 ordenLlegaAlumno;
         private OrdenEnAula1 ordenAulaLlena;
+        private bool claseComenzo = false; 
+
 
         public Pila() {
             this.elementos = new List<Comparable>();
@@ -43,13 +45,21 @@ namespace Practica5
             }
             return maximo;
         }
+
+
         public void agregar(Comparable c){
             elementos.Add(c);
-            this.ordenInicio.ejecutar();
-            if(this.ordenLlegaAlumno != null) {
-                this.ordenLlegaAlumno.ejecutar(c);
+    
+            if (!claseComenzo && ordenInicio != null) {
+                ordenInicio.ejecutar();
+                claseComenzo = true;
             }
-            if(this.cuantos() == 40 && ordenAulaLlena != null) {
+
+            if (ordenLlegaAlumno != null) {
+                ordenLlegaAlumno.ejecutar(c);
+            }
+
+            if (this.cuantos() == 40 && ordenAulaLlena != null) {
                 ordenAulaLlena.ejecutar();
             }
 
