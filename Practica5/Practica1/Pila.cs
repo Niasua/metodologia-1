@@ -48,7 +48,7 @@ namespace Practica5
         public void agregar(Comparable c){
             elementos.Add(c);
     
-            if (this.elementos.Count == 1 && ordenInicio != null) {
+            if (this.cuantos() == 1 && ordenInicio != null) {
                 ordenInicio.ejecutar();
             }
 
