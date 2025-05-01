@@ -43,17 +43,21 @@ namespace Practica5 {
             return maximo;
         }
 
-        public void agregar(Comparable c) {
-            if (!pertenece(c)) {
-                conjunto.Add(c); 
-            }        
-            this.ordenInicio.ejecutar();
-            if(this.ordenLlegaAlumno != null) {
-                this.ordenLlegaAlumno.ejecutar(c);
+        public void agregar(Comparable c){
+            conjunto.Add(c);
+    
+            if (this.cuantos() == 1 && ordenInicio != null) {
+                ordenInicio.ejecutar();
             }
-            if(this.cuantos() == 40 && ordenAulaLlena != null) {
+
+            if (ordenLlegaAlumno != null) {
+                ordenLlegaAlumno.ejecutar(c);
+            }
+
+            if (this.cuantos() == 40 && ordenAulaLlena != null) {
                 ordenAulaLlena.ejecutar();
             }
+
         }
 
         public bool contiene (Comparable c) {
