@@ -58,6 +58,15 @@ namespace Practica5 {
             llenar(pila, 2);
             llenar(pila, 4);
 
+            Cola cola = new Cola();
+            Aula aula2 = new Aula();
+
+            cola.setOrdenInicio(new OrdenInicio(aula2)); 
+            cola.setOrdenLlegaAlumno(new OrdenLlegaAlumno(aula2));
+            cola.setOrdenAulaLlena(new OrdenAulaLlena(aula2));
+
+            llenar(cola, 2);
+            llenar(cola, 4);
         }
 
         public static void llenar(Coleccionable coleccionable, int opcion) {
