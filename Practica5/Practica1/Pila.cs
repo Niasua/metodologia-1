@@ -8,8 +8,6 @@ namespace Practica5
         private OrdenEnAula1 ordenInicio;
         private OrdenEnAula2 ordenLlegaAlumno;
         private OrdenEnAula1 ordenAulaLlena;
-        private bool claseComenzo = false; 
-
 
         public Pila() {
             this.elementos = new List<Comparable>();
@@ -50,9 +48,8 @@ namespace Practica5
         public void agregar(Comparable c){
             elementos.Add(c);
     
-            if (!claseComenzo && ordenInicio != null) {
+            if (this.elementos.Count == 1 && ordenInicio != null) {
                 ordenInicio.ejecutar();
-                claseComenzo = true;
             }
 
             if (ordenLlegaAlumno != null) {
