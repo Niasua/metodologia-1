@@ -1,0 +1,15 @@
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\bin\Debug\net8.0\Practica6.exe
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\bin\Debug\net8.0\Practica6.deps.json
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\bin\Debug\net8.0\Practica6.runtimeconfig.json
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\bin\Debug\net8.0\Practica6.dll
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\bin\Debug\net8.0\Practica6.pdb
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\obj\Debug\net8.0\Practica6.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\obj\Debug\net8.0\Practica6.AssemblyInfoInputs.cache
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\obj\Debug\net8.0\Practica6.AssemblyInfo.cs
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\obj\Debug\net8.0\Practica6.csproj.CoreCompileInputs.cache
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\obj\Debug\net8.0\Practica6.sourcelink.json
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\obj\Debug\net8.0\Practica6.dll
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\obj\Debug\net8.0\refint\Practica6.dll
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\obj\Debug\net8.0\Practica6.pdb
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\obj\Debug\net8.0\Practica6.genruntimeconfig.cache
+C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica6\obj\Debug\net8.0\ref\Practica6.dll
