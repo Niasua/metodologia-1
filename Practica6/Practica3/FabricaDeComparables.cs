@@ -23,6 +23,12 @@ namespace Practica6 {
                 case 4: 
                     fabrica = new FabricaDeAlumnosMuyEstudiosos();
                     break;
+                case 5:
+                    fabrica = new FabricaDeAlumnoProxy();
+                    break;
+                case 6:
+                    fabrica = new FabricaDeAlumnoCompuesto();
+                    break;
                 default:
                     break;
             }
@@ -43,6 +49,12 @@ namespace Practica6 {
                     break;
                 case 4: 
                     fabrica = new FabricaDeAlumnosMuyEstudiosos();
+                    break;
+                case 5:
+                    fabrica = new FabricaDeAlumnoProxy();
+                    break;
+                case 6:
+                    fabrica = new FabricaDeAlumnoCompuesto();
                     break;
                 default:
                     break;
