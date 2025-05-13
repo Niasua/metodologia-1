@@ -38,17 +38,33 @@ namespace Practica6 {
             Persona p1 = (Persona)new FabricaDeAlumnos().crearAleatorio();
             Persona p2 = (Persona)new FabricaDeAlumnos().crearAleatorio();
 
-            juego1.jugar(p1, p2);
-            juego2.jugar(p1, p2);
+            int puntosP1 = 0;
+            int puntosP2 = 0;
+            for(int i = 0; i < 3; i++) {
+                if(jugarPartida(p1, p2, juego1) == p1) {
+                    puntosP1++;
+                } else {
+                    puntosP2++;
+                }
+            }
+            if(puntosP1 == 2) {
+                Console.WriteLine("El ganador es el Jugador 1 !!!");
+            } else {
+                Console.WriteLine("El ganador es el Jugador 2 !!!");
+            }
         }
 
-        public Comparable crearAleatorio() {
+        public static Comparable crearAleatorio() {
             AlumnoCompuesto compuesto = (AlumnoCompuesto)new FabricaDeAlumnoCompuesto().crearAleatorio();
             for(int i = 0; i < 5; i++) {
                 IAlumno proxy = (IAlumno)new FabricaDeAlumnoProxy().crearAleatorio();
                 compuesto.agregarHijos(proxy);
             }
             return compuesto;
+        }
+
+        public static Persona jugarPartida(Persona p1, Persona p2, JuegoDeCarta juego) {
+            return juego.jugar(p1, p2);
         }
     }
 }
