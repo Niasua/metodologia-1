@@ -34,10 +34,12 @@ namespace Practica6 {
 
             // Template Method
             JuegoDeCarta juego1 = new Truco();
+            JuegoDeCarta juego2 = new Chinchon();
             Persona p1 = (Persona)new FabricaDeAlumnos().crearAleatorio();
             Persona p2 = (Persona)new FabricaDeAlumnos().crearAleatorio();
 
             juego1.jugar(p1, p2);
+            juego2.jugar(p1, p2);
         }
 
         public Comparable crearAleatorio() {

@@ -2,47 +2,42 @@ using System;
 
 namespace Practica6 {
     public class Truco : JuegoDeCarta {
-        public static int contador;
+        public static int turno;
 
         public Truco() {
-            contador = 1;
+            turno = 1;
         }
-        protected override void descartar()
-        {
-            if(contador % 2 == 0) {
-                Console.WriteLine("Jugador 1 jugando una de las cartas");
+
+        public string getJugador() {
+            if (turno % 2 == 0) {
+                return "Jugador 2";
             } else {
-                Console.WriteLine("Jugador 2 jugando una de las cartas");
+                return "Jugador 1";
             }
         }
 
-        protected override bool hayGanador()
-        {
-            if(contador == 1) {
+        protected override void descartar() {
+            Console.WriteLine(getJugador() + " jugando una de las cartas");
+            turno++;
+        }
+
+        protected override bool hayGanador() {
+            if (turno == 1) {
                 Console.WriteLine("Empieza la partida!");
             }
-            if(contador % 2 == 0) {
-                Console.WriteLine("Jugador 2: ");
-            } else {
-                Console.WriteLine("Jugador 1: ");
-            }
-            
+
+            Console.WriteLine(getJugador() + ": ");
             int n = int.Parse(Console.ReadLine());
-            if(n != 3) {
-                contador++;
-            }
+
             if(n == 3) {
-                if(contador % 2 == 0) {
-                    Console.WriteLine("El ganador es el Jugador 2");
-                } else {
-                    Console.WriteLine("El ganador es el Jugador 1");
-                }
+                Console.WriteLine("\nEl ganador es " + getJugador() + "\n\n\n");
+                
+                return true;
             }
-            return n == 3;
+            return false;
         }
 
-        protected override void repartir()
-        {
+        protected override void repartir() {
             Console.WriteLine("Repartiendo cartas de Truco");
         }
 
