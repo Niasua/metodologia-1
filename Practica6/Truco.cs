@@ -1,4 +1,5 @@
 using System;
+using System.Security.Cryptography;
 
 namespace Practica6 {
     public class Truco : JuegoDeCarta {
@@ -31,7 +32,11 @@ namespace Practica6 {
 
             if(n == 3) {
                 Console.WriteLine("\nEl ganador es " + getJugador() + "\n\n\n");
-                
+                if(getJugador() == "Jugador 1") {
+                    p1.setEsGanador(true);
+                } else {
+                    p2.setEsGanador(true);
+                }                
                 return true;
             }
             return false;

@@ -36,6 +36,11 @@ namespace Practica6 {
 
             if (opcion == 9) {
                 Console.WriteLine("\n" + getJugador() + " hizo chinchón y ganó la partida!");
+                if(getJugador() == "Jugador 1") {
+                    p1.setEsGanador(true);
+                } else {
+                    p2.setEsGanador(true);
+                }
                 return true;
             }
 

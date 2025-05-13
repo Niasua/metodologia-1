@@ -2,7 +2,12 @@ using System;
 
 namespace Practica6 {
     public abstract class JuegoDeCarta {
+        protected Persona p1;
+        protected Persona p2;
+
         public Persona jugar(Persona p1, Persona p2) {
+            this.p1 = p1;
+            this.p2 = p2;
             mezclar();
             repartir();
             while(!hayGanador()) {
