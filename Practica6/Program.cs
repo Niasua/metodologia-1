@@ -20,14 +20,24 @@ namespace Practica6 {
 
 
             // alumno.responderPregunta(2);
-            Teacher teacher = new Teacher();
 
-            for(int i = 0; i < 20; i++) {
-                IAlumno compuesto = (IAlumno)new FabricaDeAlumnoCompuesto().crearAleatorio();
-                Student alumnoAdaptado = new AlumnoAdapter(compuesto);
-                teacher.goToClass(alumnoAdaptado);
-            }
-            teacher.teachingAClass();
+            // Composite
+            
+            // Teacher teacher = new Teacher();
+
+            // for(int i = 0; i < 20; i++) {
+            //     IAlumno compuesto = (IAlumno)new FabricaDeAlumnoCompuesto().crearAleatorio();
+            //     Student alumnoAdaptado = new AlumnoAdapter(compuesto);
+            //     teacher.goToClass(alumnoAdaptado);
+            // }
+            // teacher.teachingAClass();
+
+            // Template Method
+            JuegoDeCarta juego1 = new Truco();
+            Persona p1 = (Persona)new FabricaDeAlumnos().crearAleatorio();
+            Persona p2 = (Persona)new FabricaDeAlumnos().crearAleatorio();
+
+            juego1.jugar(p1, p2);
         }
 
         public Comparable crearAleatorio() {
