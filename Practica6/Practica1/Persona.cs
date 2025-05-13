@@ -5,12 +5,14 @@ namespace Practica6 {
         // atributos
         protected string nombre;
         protected int dni;
+        protected bool esGanador;
 
 
         // constructor
         public Persona(string nombre, int dni) {
             this.nombre = nombre;
             this.dni = dni;
+            this.esGanador = false;
         }
 
 
@@ -33,6 +35,14 @@ namespace Practica6 {
 
         public int getDni() {
             return this.dni;
+        }
+
+        public bool getEsGanador() {
+            return this.esGanador;
+        }
+
+        public void setEsGanador(bool esGanador) {
+            this.esGanador = esGanador;
         }
     }
 }

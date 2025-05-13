@@ -1,0 +1,30 @@
+using System;
+
+namespace Practica6 {
+    public abstract class JuegoDeCarta {
+        public Persona jugar(Persona p1, Persona p2) {
+            mezclar();
+            repartir();
+            while(!hayGanador()) {
+                tomarCarta();
+                descartar();
+            }
+            if(p1.getEsGanador()) {
+                return p1;
+            } else {
+                return p2;
+            }
+
+        }
+
+        // private porque ningun hijo lo modificara
+        private void mezclar() {
+            Console.WriteLine("Estoy mezclando cartas");
+        }
+
+        protected abstract void repartir();
+        protected abstract bool hayGanador();
+        protected abstract void tomarCarta();
+        protected abstract void descartar();
+    }
+}
