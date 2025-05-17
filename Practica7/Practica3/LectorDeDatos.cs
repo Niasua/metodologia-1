@@ -1,5 +1,5 @@
 using System;
-namespace Practica6 {
+namespace Practica7 {
     // Ejercicio 3
     public class LectorDeDatos {
         public int numeroPorTeclado() {

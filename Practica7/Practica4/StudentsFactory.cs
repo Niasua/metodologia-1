@@ -1,7 +1,7 @@
 using System;
 using MetodologíasDeProgramaciónI;
 
-namespace Practica6 {
+namespace Practica7 {
     // Ejercicio 7 Practica 4
     public class StudentsFactory : FabricaDeAlumnos {
 

@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica6 {
+namespace Practica7 {
     public interface Ordenable {
         void setOrdenInicio(OrdenEnAula1 orden);
         void setOrdenLlegaAlumno(OrdenEnAula2 orden);

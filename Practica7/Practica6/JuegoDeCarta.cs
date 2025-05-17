@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica6 {
+namespace Practica7 {
     public abstract class JuegoDeCarta {
         protected Persona p1;
         protected Persona p2;

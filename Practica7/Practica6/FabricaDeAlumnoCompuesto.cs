@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica6 {
+namespace Practica7 {
     public class FabricaDeAlumnoCompuesto : FabricaDeComparables {
         public override Comparable crearAleatorio() {
             return new AlumnoCompuesto();

@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica6 {
+namespace Practica7 {
     public class ColeccionMultiple : Coleccionable {
         // atributos
         private Pila pila;

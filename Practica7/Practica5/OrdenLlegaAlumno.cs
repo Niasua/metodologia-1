@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica6 {
+namespace Practica7 {
     public class OrdenLlegaAlumno : OrdenEnAula2 {
         private Aula aula;
         public OrdenLlegaAlumno(Aula aula) {

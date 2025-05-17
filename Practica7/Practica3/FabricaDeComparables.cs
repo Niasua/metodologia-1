@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica6 {
+namespace Practica7 {
     // Ejercicio 4
     public abstract class FabricaDeComparables {
         // generador y lector heredables

@@ -1,7 +1,7 @@
 using System;
 using System.ComponentModel;
 
-namespace Practica6 {
+namespace Practica7 {
     // Ejercicio 1 Practica 5
     public class AlumnoProxy : IAlumno {
         private Alumno alumnoReal;

@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica6 {
+namespace Practica7 {
     // Ejercicio 8 Practica 3
     public class Profesor : Persona, Observado {
         private int antiguedad;

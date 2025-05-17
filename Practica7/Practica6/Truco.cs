@@ -1,7 +1,7 @@
 using System;
 using System.Security.Cryptography;
 
-namespace Practica6 {
+namespace Practica7 {
     public class Truco : JuegoDeCarta {
         public static int turno;
 

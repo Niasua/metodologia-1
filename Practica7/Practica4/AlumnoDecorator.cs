@@ -1,7 +1,7 @@
 using System;
 using MetodologíasDeProgramaciónI;
 
-namespace Practica6 {
+namespace Practica7 {
     // Ejercicio 6 Practica 4
     public abstract class AlumnoDecorator : IAlumno {
         protected IAlumno adicional;

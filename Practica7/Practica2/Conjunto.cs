@@ -1,7 +1,7 @@
 using System;
 
 // Ejercicio 3 Practica 2
-namespace Practica6 {
+namespace Practica7 {
     public class Conjunto : Coleccionable, Ordenable {
         private List<Comparable> conjunto;
         private OrdenEnAula1 ordenInicio;

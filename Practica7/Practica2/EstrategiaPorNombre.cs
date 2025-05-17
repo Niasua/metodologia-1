@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica6 {
+namespace Practica7 {
     // Ejercicio 1
     public class EstrategiaPorNombre : EstrategiaDeComparacion {
         public bool sosIgual(Comparable c1, Comparable c2) {

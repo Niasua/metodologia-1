@@ -2,7 +2,7 @@ using System;
 using MetodologíasDeProgramaciónI;
 
 // Ejercicio 5 Practica 4
-namespace Practica6 {
+namespace Practica7 {
     public class EstrategiaPorCalificacion : EstrategiaDeComparacion {
         // metodos implementados desde EstrategiaDeComparacion
         public bool sosIgual(Comparable c1, Comparable c2) {

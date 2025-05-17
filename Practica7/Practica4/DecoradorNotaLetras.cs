@@ -1,7 +1,7 @@
 using System;
 using MetodologíasDeProgramaciónI;
 
-namespace Practica6 {
+namespace Practica7 {
     public class DecoradorNotaLetras : AlumnoDecorator {
     
         public DecoradorNotaLetras(IAlumno alumno) : base(alumno) {}
