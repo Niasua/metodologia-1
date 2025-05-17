@@ -13,7 +13,7 @@ namespace Practica7
 
         // implementar la interfaz publica de cada objeto que compone la jerarquia
         // de lector de datos
-        public int numeroPorTeclado() 
+        public virtual int numeroPorTeclado() 
         {
             if(sucesor != null)
             {
@@ -22,7 +22,7 @@ namespace Practica7
             return 0;
         }
 
-        public string stringPorTeclado() 
+        public virtual string stringPorTeclado() 
         {
             if(sucesor != null)
             {
@@ -32,7 +32,7 @@ namespace Practica7
         }
 
         // de generador de datos aleatorios
-        public int numeroAleatorio(int max) 
+        public virtual int numeroAleatorio(int max) 
         {
             if(sucesor != null) 
             {
@@ -40,7 +40,7 @@ namespace Practica7
             }
             return 0;
         }
-        public string stringAleatorio(int cant = 5) 
+        public virtual string stringAleatorio(int cant = 5) 
         {
             if(sucesor != null)
             {

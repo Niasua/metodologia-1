@@ -2,12 +2,17 @@ using System;
 
 namespace Practica7 {
     public class FabricaDeAlumnoProxy : FabricaDeComparables {
+        public FabricaDeAlumnoProxy()
+        {
+            this.generarCadenaDeResponsables();
+        }
+
         public override Comparable crearAleatorio() {
-            return new AlumnoProxy(gen.stringAleatorio());
+            return new AlumnoProxy(this.responsable.stringAleatorio());
         }
 
         public override Comparable crearPorTeclado() {
-            return new AlumnoProxy(lec.stringPorTeclado());
+            return new AlumnoProxy(this.responsable.stringPorTeclado());
         }
     }
 }

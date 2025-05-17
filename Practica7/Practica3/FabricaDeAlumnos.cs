@@ -3,12 +3,17 @@ using System;
 namespace Practica7 {
     // Ejercicio 5
     public class FabricaDeAlumnos : FabricaDeComparables {
+        public FabricaDeAlumnos()
+        {
+            this.generarCadenaDeResponsables();
+        }
+
         public override Comparable crearAleatorio() {
-            return new Alumno(gen.stringAleatorio(), gen.numeroAleatorio(10000000), gen.numeroAleatorio(10000),gen.numeroAleatorio(10));
+            return new Alumno(this.responsable.stringAleatorio(), this.responsable.numeroAleatorio(10000000), this.responsable.numeroAleatorio(10000),this.responsable.numeroAleatorio(10));
         }
 
         public override Comparable crearPorTeclado() {
-            return new Alumno(lec.stringPorTeclado(), lec.numeroPorTeclado(), lec.numeroPorTeclado(), lec.numeroPorTeclado());
+            return new Alumno(this.responsable.stringPorTeclado(), this.responsable.numeroPorTeclado(), this.responsable.numeroPorTeclado(), this.responsable.numeroPorTeclado());
         }
         
     }

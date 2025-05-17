@@ -3,11 +3,10 @@ using System;
 namespace Practica7 {
     // Ejercicio 4
     public abstract class FabricaDeComparables {
-        // generador y lector heredables
-        // protected GeneradorDeDatosAleatorios gen = new GeneradorDeDatosAleatorios();
-        // protected LectorDeDatos lec = new LectorDeDatos();
+        
 
         protected Manejador responsable;
+
 
         // metodos de clase
         public static Comparable crearAleatorio(int opcion) {
@@ -68,6 +67,14 @@ namespace Practica7 {
         public abstract Comparable crearAleatorio();
 
         public abstract Comparable crearPorTeclado();
+
+        protected void generarCadenaDeResponsables()
+        {
+            // generador y lector heredables
+            Manejador manejador = new LectorDeDatos(null);
+            manejador = new GeneradorDeDatosAleatorios(manejador);
+            this.responsable = manejador;
+        }
         
     }
 }

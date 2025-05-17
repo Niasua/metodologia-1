@@ -6,12 +6,12 @@ namespace Practica7 {
         {
         }
 
-        public int numeroPorTeclado() {
+        public override int numeroPorTeclado() {
         Console.Write("Ingrese un número: ");
         return int.Parse(Console.ReadLine());
         }
 
-        public string stringPorTeclado() {
+        public override string stringPorTeclado() {
             Console.Write("Ingrese un texto: ");
             return Console.ReadLine();
         }

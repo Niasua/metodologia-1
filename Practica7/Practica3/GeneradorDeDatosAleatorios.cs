@@ -10,10 +10,10 @@ namespace Practica7 {
         {
         }
 
-        public int numeroAleatorio(int max) {
+        public override int numeroAleatorio(int max) {
             return this.random.Next(0, max);
         }
-        public string stringAleatorio(int cant = 5) {
+        public override string stringAleatorio(int cant = 5) {
             const string alfabeto = "abcdefghijklmnopqrstuvwxyz";
             StringBuilder token = new StringBuilder();
             for(int i = 0; i < cant; i++) {

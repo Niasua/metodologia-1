@@ -2,6 +2,11 @@ using System;
 
 namespace Practica7 {
     public class FabricaDeAlumnoCompuesto : FabricaDeComparables {
+        public FabricaDeAlumnoCompuesto()
+        {
+            this.generarCadenaDeResponsables();
+        }
+
         public override Comparable crearAleatorio() {
             return new AlumnoCompuesto();
         }
