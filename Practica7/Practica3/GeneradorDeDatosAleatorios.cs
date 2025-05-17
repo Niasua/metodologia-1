@@ -3,8 +3,13 @@ using System.Text;
 
 namespace Practica7 {
     // Ejercicio 2
-    public class GeneradorDeDatosAleatorios {
+    public class GeneradorDeDatosAleatorios : Manejador {
         Random random = new Random();
+
+        public GeneradorDeDatosAleatorios(Manejador m) : base(m)
+        {
+        }
+
         public int numeroAleatorio(int max) {
             return this.random.Next(0, max);
         }

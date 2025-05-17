@@ -1,6 +1,6 @@
 using System;
 
-namespace Practica6 {
+namespace Practica7 {
     public class FabricaDeAlumnoProxy : FabricaDeComparables {
         public override Comparable crearAleatorio() {
             return new AlumnoProxy(gen.stringAleatorio());
