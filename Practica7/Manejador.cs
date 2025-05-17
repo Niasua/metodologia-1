@@ -49,5 +49,24 @@ namespace Practica7
             return "";
         }
 
+        // De ObtencionDeDatos		
+		public virtual double numeroDesdeArchivo(double max)
+        {
+			if(sucesor != null)
+            {
+                return sucesor.numeroDesdeArchivo(max);
+            }
+            return 0;
+		}
+		
+		public virtual string stringDesdeArchivo(int cant)
+        {
+			if(sucesor != null)
+            {
+                return sucesor.stringDesdeArchivo(cant);
+            }
+            return "";
+		}
+
     }
 }

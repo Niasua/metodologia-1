@@ -16,26 +16,29 @@ using System;
 using System.IO;
 using MetodologíasDeProgramaciónI;
 
-namespace ObtencionDeDatos
+namespace Practica7
 {
-	public class LectorDeArchivos {
+	public class LectorDeArchivos : Manejador{
 		
 		// El alumno deberá agregar la ruta correspondiente a su equipo donde haya guardado el archvo con los datos
-		private const string ruta_archivo = @"C:\Mis documentos\Facultad\MDPI\TP7\datos.txt";
+		private const string ruta_archivo = @"C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica7\datos.txt";
 		// --------------------------------------------------------------------------------------------------------
 		
 		private StreamReader lector_de_archivos;
 		
-		public LectorDeArchivos():base(){
+		public LectorDeArchivos(Manejador m) : base(m)
+		{
 			lector_de_archivos = new StreamReader(ruta_archivo);
 		}
 		
-		public double numeroDesdeArchivo(double max){
+		public override double numeroDesdeArchivo(double max)
+		{
 			string linea = lector_de_archivos.ReadLine();
 			return Double.Parse(linea.Substring(0, linea.IndexOf('\t'))) * max;
 		}
 		
-		public string stringDesdeArchivo(int cant){
+		public override string stringDesdeArchivo(int cant)
+		{
 			string linea = lector_de_archivos.ReadLine();
 			linea = linea.Substring(linea.IndexOf('\t')+1);
 			cant = Math.Min(cant, linea.Length);
