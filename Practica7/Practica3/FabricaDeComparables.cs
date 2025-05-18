@@ -73,6 +73,7 @@ namespace Practica7 {
             // generador y lector heredables
             Manejador manejador = LectorDeDatos.getInstance(null);
             manejador = GeneradorDeDatosAleatorios.getInstance(manejador);
+            manejador = LectorDeArchivos.getInstance(manejador);
             this.responsable = manejador;
         }
         

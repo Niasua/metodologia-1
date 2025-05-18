@@ -24,9 +24,10 @@ namespace Practica7
 		private const string ruta_archivo = @"C:\Users\Nico\unaj\Metodologia-1\metodologia-1\Practica7\datos.txt";
 		// --------------------------------------------------------------------------------------------------------
 		
+		private static LectorDeArchivos unicaInstancia = null;
 		private StreamReader lector_de_archivos;
 		
-		public LectorDeArchivos(Manejador m) : base(m)
+		private LectorDeArchivos(Manejador m) : base(m)
 		{
 			lector_de_archivos = new StreamReader(ruta_archivo);
 		}
@@ -43,6 +44,15 @@ namespace Practica7
 			linea = linea.Substring(linea.IndexOf('\t')+1);
 			cant = Math.Min(cant, linea.Length);
 			return linea.Substring(0, cant);
+		}
+
+		public static LectorDeArchivos getInstance(Manejador m)
+		{
+			if(unicaInstancia == null)
+			{
+				unicaInstancia = new LectorDeArchivos(m);
+			}
+			return unicaInstancia;
 		}
 	}
 }
