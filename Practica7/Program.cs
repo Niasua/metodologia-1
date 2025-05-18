@@ -7,18 +7,18 @@ namespace Practica7
         static void Main(string[] args)
         {
             for (int i = 0; i < 5; i++)
-            {
-                Comparable alumno = new FabricaDeAlumnos().crearAleatorio();
+            { 
+                Comparable alumno = FabricaDeAlumnos.crearAleatorio(2);
                 Console.WriteLine(alumno.ToString());
             }
             for(int i = 0; i < 2; i++)
             {
-                Comparable alumnoEstudioso = new FabricaDeAlumnosMuyEstudiosos().crearPorTeclado();
+                Comparable alumnoEstudioso = FabricaDeAlumnosMuyEstudiosos.crearPorTeclado(4);
                 Console.WriteLine(alumnoEstudioso.ToString());
             }
             for(int i = 0; i < 5; i++)
             {
-                Comparable alumnoCompuesto = new FabricaDeAlumnoCompuesto().crearDesdeArchivo();
+                Comparable alumnoCompuesto = FabricaDeAlumnoCompuesto.crearDesdeArchivo(6);
                 Console.WriteLine(alumnoCompuesto.ToString());
             }
 
