@@ -3,7 +3,10 @@ using System.Text;
 
 namespace Practica7 {
     // Ejercicio 2
-    public class GeneradorDeDatosAleatorios : Manejador {
+    public class GeneradorDeDatosAleatorios : Manejador 
+    {
+        private static GeneradorDeDatosAleatorios unicaInstancia = null;
+        
         Random random = new Random();
 
         public GeneradorDeDatosAleatorios(Manejador m) : base(m)
@@ -21,6 +24,16 @@ namespace Practica7 {
                 token.Append(alfabeto[indice]);
             }
             return token.ToString();
+        }
+
+        // punto de acceso Singleton
+        public static GeneradorDeDatosAleatorios getInstance(Manejador m)
+        {
+            if(unicaInstancia == null) 
+            {
+                unicaInstancia = new GeneradorDeDatosAleatorios(m);
+            }
+            return unicaInstancia;
         }
     }     
 }

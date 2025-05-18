@@ -6,7 +6,6 @@ namespace Practica7
     {
         static void Main(string[] args)
         {
-            
         }
     }
 }
