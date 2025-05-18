@@ -2,7 +2,9 @@ using System;
 namespace Practica7 {
     // Ejercicio 3
     public class LectorDeDatos : Manejador {
-        public LectorDeDatos(Manejador m) : base(m)
+        private static LectorDeDatos unicaInstancia = null;
+
+        private LectorDeDatos(Manejador m) : base(m)
         {
         }
 
@@ -14,6 +16,15 @@ namespace Practica7 {
         public override string stringPorTeclado() {
             Console.Write("Ingrese un texto: ");
             return Console.ReadLine();
+        }
+
+        public static LectorDeDatos getInstance(Manejador m)
+        {
+            if(unicaInstancia == null)
+            {
+                unicaInstancia = new LectorDeDatos(m);
+            }
+            return unicaInstancia;
         }
     }
 

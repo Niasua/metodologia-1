@@ -71,8 +71,8 @@ namespace Practica7 {
         protected void generarCadenaDeResponsables()
         {
             // generador y lector heredables
-            Manejador manejador = new LectorDeDatos(null);
-            manejador = new GeneradorDeDatosAleatorios(manejador);
+            Manejador manejador = LectorDeDatos.getInstance(null);
+            manejador = GeneradorDeDatosAleatorios.getInstance(manejador);
             this.responsable = manejador;
         }
         

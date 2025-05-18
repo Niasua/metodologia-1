@@ -6,6 +6,7 @@ namespace Practica7 {
         public FabricaDeNumeros()
         {
             this.generarCadenaDeResponsables();
+
         }
 
         public override Comparable crearAleatorio() {

@@ -9,7 +9,8 @@ namespace Practica7 {
         
         Random random = new Random();
 
-        public GeneradorDeDatosAleatorios(Manejador m) : base(m)
+        // constructor privado para buen uso del Singleton
+        private GeneradorDeDatosAleatorios(Manejador m) : base(m)
         {
         }
 
