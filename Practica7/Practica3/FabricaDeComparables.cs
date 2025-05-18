@@ -63,10 +63,42 @@ namespace Practica7 {
             return fabrica.crearPorTeclado();
         }
 
+        public static Comparable crearDesdeArchivo(int opcion) {
+            FabricaDeComparables fabrica = null;
+            switch (opcion) {
+                case 1: // ver como crear Numero --> Fabrica concreta
+                    fabrica = new FabricaDeNumeros();
+                    break;
+                case 2: // ver como crear Alumno --> Fabrica concreta
+                    fabrica = new FabricaDeAlumnos();
+                    break;
+                case 3:
+                    fabrica = new FabricaDeProfesores();
+                    break;
+                case 4: 
+                    fabrica = new FabricaDeAlumnosMuyEstudiosos();
+                    break;
+                case 5:
+                    fabrica = new FabricaDeAlumnoProxy();
+                    break;
+                case 6:
+                    fabrica = new FabricaDeAlumnoCompuesto();
+                    break;
+                default:
+                    break;
+            }
+            return fabrica.crearDesdeArchivo();
+        }
+
+
+
         // metodos de instancia
         public abstract Comparable crearAleatorio();
 
         public abstract Comparable crearPorTeclado();
+
+        public abstract Comparable crearDesdeArchivo(int cant = 1, int max = 1);
+        
 
         protected void generarCadenaDeResponsables()
         {

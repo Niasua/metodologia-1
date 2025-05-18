@@ -50,7 +50,7 @@ namespace Practica7
         }
 
         // De ObtencionDeDatos		
-		public virtual double numeroDesdeArchivo(double max)
+		public virtual int numeroDesdeArchivo(int max)
         {
 			if(sucesor != null)
             {

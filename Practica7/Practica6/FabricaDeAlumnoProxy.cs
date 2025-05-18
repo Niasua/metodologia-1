@@ -11,6 +11,11 @@ namespace Practica7 {
             return new AlumnoProxy(this.responsable.stringAleatorio());
         }
 
+        public override Comparable crearDesdeArchivo(int cant = 1, int max = 1)
+        {
+            return new AlumnoProxy(this.responsable.stringDesdeArchivo(cant));
+        }
+
         public override Comparable crearPorTeclado() {
             return new AlumnoProxy(this.responsable.stringPorTeclado());
         }

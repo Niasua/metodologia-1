@@ -12,9 +12,14 @@ namespace Practica7 {
             return new Alumno(this.responsable.stringAleatorio(), this.responsable.numeroAleatorio(10000000), this.responsable.numeroAleatorio(10000),this.responsable.numeroAleatorio(10));
         }
 
-        public override Comparable crearPorTeclado() {
-            return new Alumno(this.responsable.stringPorTeclado(), this.responsable.numeroPorTeclado(), this.responsable.numeroPorTeclado(), this.responsable.numeroPorTeclado());
+        public override Comparable crearDesdeArchivo(int cant = 1, int max = 1)
+        {
+            return new Alumno(this.responsable.stringDesdeArchivo(cant), this.responsable.numeroDesdeArchivo(max), this.responsable.numeroDesdeArchivo(max), this.responsable.numeroDesdeArchivo(max));
         }
-        
+
+        public override Comparable crearPorTeclado()
+        {
+            throw new NotImplementedException();
+        }
     }
 }

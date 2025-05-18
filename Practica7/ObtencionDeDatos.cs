@@ -32,10 +32,10 @@ namespace Practica7
 			lector_de_archivos = new StreamReader(ruta_archivo);
 		}
 		
-		public override double numeroDesdeArchivo(double max)
+		public override int numeroDesdeArchivo(int max)
 		{
 			string linea = lector_de_archivos.ReadLine();
-			return Double.Parse(linea.Substring(0, linea.IndexOf('\t'))) * max;
+			return int.Parse(linea.Substring(0, linea.IndexOf('\t'))) * max;
 		}
 		
 		public override string stringDesdeArchivo(int cant)

@@ -15,12 +15,12 @@ namespace Practica7 {
         } 
 
         public override Comparable crearAleatorio() {
-            Alumno alumno = new Alumno(gen.stringAleatorio(), gen.numeroAleatorio(10000000), gen.numeroAleatorio(10000),gen.numeroAleatorio(10));
+            Alumno alumno = new Alumno(this.responsable.stringAleatorio(), this.responsable.numeroAleatorio(10000000), this.responsable.numeroAleatorio(10000),this.responsable.numeroAleatorio(10));
             return aplicarDecorador(alumno);
         }
 
         public override Comparable crearPorTeclado() {
-            Alumno alumno = new Alumno(lec.stringPorTeclado(), lec.numeroPorTeclado(), lec.numeroPorTeclado(), lec.numeroPorTeclado());
+            Alumno alumno = new Alumno(this.responsable.stringPorTeclado(), this.responsable.numeroPorTeclado(), this.responsable.numeroPorTeclado(), this.responsable.numeroPorTeclado());
             return aplicarDecorador(alumno);
         }
     }
