@@ -9,6 +9,5 @@ namespace Practica5 {
         public void ejecutar() {
             this.aula.claseLista();
         }
-
     }
 }

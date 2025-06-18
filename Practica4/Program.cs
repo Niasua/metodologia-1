@@ -1,15 +1,14 @@
 ﻿using System;
 using MetodologíasDeProgramaciónI;
-using Practica4;
 
-namespace Practica3 {
+namespace Practica4 {
     public class Program {
         static void Main(string[] args) {
             // Ejercicio 4 Practica 4
             Teacher teacher = new Teacher();
             for(int i = 0; i < 20; i++) {
                 if(i < 10){
-                    Alumno alumno = (Alumno) new FabricaDeAlumnos().crearAleatorio();
+                    Alumno alumno = (Alumno)FabricaDeComparables.crearAleatorio(2);
                     // Ejercicio 5 Practica 4 (Estableciendo estrategia de comparacion)
                     alumno.setEstrategia(new EstrategiaPorCalificacion());
                     // Se agrega el alumno decorado
@@ -17,7 +16,7 @@ namespace Practica3 {
                     Student student = new AlumnoAdapter(alumnoDecorado);
                     teacher.goToClass(student);
                 } else {
-                    AlumnoMuyEstudioso alumno = (AlumnoMuyEstudioso) new FabricaDeAlumnosMuyEstudiosos().crearAleatorio();
+                    AlumnoMuyEstudioso alumno = (AlumnoMuyEstudioso)FabricaDeComparables.crearAleatorio(4);
                     // Ejercicio 5 Practica 4 (Estableciendo estrategia de comparacion)
                     alumno.setEstrategia(new EstrategiaPorCalificacion());
                     IAlumno alumnoDecorado = new StudentsFactory().aplicarDecorador(alumno);

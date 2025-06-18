@@ -11,14 +11,17 @@ namespace Practica4 {
         public static Comparable crearAleatorio(int opcion) {
             FabricaDeComparables fabrica = null;
             switch (opcion) {
-                case 1: // ver como crear Numero --> Fabrica concreta
+                case 1: 
                     fabrica = new FabricaDeNumeros();
                     break;
-                case 2: // ver como crear Alumno --> Fabrica concreta
+                case 2: 
                     fabrica = new FabricaDeAlumnos();
                     break;
                 case 3:
                     fabrica = new FabricaDeProfesores();
+                    break;
+                case 4:
+                    fabrica = new FabricaDeAlumnosMuyEstudiosos();
                     break;
                 default:
                     break;
@@ -29,14 +32,17 @@ namespace Practica4 {
         public static Comparable crearPorTeclado(int opcion) {
             FabricaDeComparables fabrica = null;
             switch (opcion) {
-                case 1: // ver como crear Numero --> Fabrica concreta
+                case 1: 
                     fabrica = new FabricaDeNumeros();
                     break;
-                case 2: // ver como crear Alumno --> Fabrica concreta
+                case 2: 
                     fabrica = new FabricaDeAlumnos();
                     break;
                 case 3:
                     fabrica = new FabricaDeProfesores();
+                    break;
+                case 4:
+                    fabrica = new FabricaDeAlumnosMuyEstudiosos();
                     break;
                 default:
                     break;
