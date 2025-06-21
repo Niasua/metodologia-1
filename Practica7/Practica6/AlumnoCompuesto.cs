@@ -39,11 +39,19 @@ namespace Practica7 {
             }
             return nombres;
         }
-
         public int getPromedio()
         {
-            throw new NotImplementedException();
+            if (hijos.Count == 0)
+                return 0;
+
+            int suma = 0;
+            foreach (IAlumno hijo in hijos)
+            {
+                suma += hijo.getCalificacion();
+            }
+            return suma / hijos.Count;
         }
+
 
         public string mostrarCalificacion()
         {
@@ -134,6 +142,10 @@ namespace Practica7 {
             this.hijos.Add(a);
         }
 
+        public override string ToString()
+        {
+            return $"AlumnoCompuesto: {getNombre()}, Nota promedio: {getPromedio()}";
+        }
         
     }
 }

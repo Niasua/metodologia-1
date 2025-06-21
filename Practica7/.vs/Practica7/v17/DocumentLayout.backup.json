@@ -3,12 +3,44 @@
   "WorkspaceRootPath": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica6\\Chinchon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Practica6\\Chinchon.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|c:\\users\\nico\\unaj\\metodologia-1\\metodologia-1\\practica7\\practica6\\fabricadealumnocompuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|solutionrelative:practica6\\fabricadealumnocompuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|c:\\users\\nico\\unaj\\metodologia-1\\metodologia-1\\practica7\\obtenciondedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|solutionrelative:obtenciondedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|c:\\users\\nico\\unaj\\metodologia-1\\metodologia-1\\practica7\\practica3\\lectordedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|solutionrelative:practica3\\lectordedatos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|c:\\users\\nico\\unaj\\metodologia-1\\metodologia-1\\practica7\\datos.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|solutionrelative:datos.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|c:\\users\\nico\\unaj\\metodologia-1\\metodologia-1\\practica7\\practica3\\fabricadecomparables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|solutionrelative:practica3\\fabricadecomparables.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|c:\\users\\nico\\unaj\\metodologia-1\\metodologia-1\\practica7\\practica4\\fabricadealumnosmuyestudiosos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|solutionrelative:practica4\\fabricadealumnosmuyestudiosos.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|c:\\users\\nico\\unaj\\metodologia-1\\metodologia-1\\practica7\\practica6\\alumnocompuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|solutionrelative:practica6\\alumnocompuesto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|c:\\users\\nico\\unaj\\metodologia-1\\metodologia-1\\practica7\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|c:\\users\\nico\\unaj\\metodologia-1\\metodologia-1\\practica7\\practica3\\generadordedatosaleatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|solutionrelative:practica3\\generadordedatosaleatorios.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|c:\\users\\nico\\unaj\\metodologia-1\\metodologia-1\\practica7\\manejador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{D6DBE5B4-16B2-35F1-3737-ADEFAD8E06E2}|Practica7.csproj|solutionrelative:manejador.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,32 +50,136 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "Chinchon.cs",
-              "DocumentMoniker": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica6\\Chinchon.cs",
-              "RelativeDocumentMoniker": "Practica6\\Chinchon.cs",
-              "ToolTip": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica6\\Chinchon.cs",
-              "RelativeToolTip": "Practica6\\Chinchon.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T21:40:26.021Z",
+              "DocumentIndex": 3,
+              "Title": "datos.txt",
+              "DocumentMoniker": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\datos.txt",
+              "RelativeDocumentMoniker": "datos.txt",
+              "ToolTip": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\datos.txt*",
+              "RelativeToolTip": "datos.txt*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-06-21T11:34:04.83Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
+              "Title": "FabricaDeAlumnoCompuesto.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica6\\FabricaDeAlumnoCompuesto.cs",
+              "RelativeDocumentMoniker": "Practica6\\FabricaDeAlumnoCompuesto.cs",
+              "ToolTip": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica6\\FabricaDeAlumnoCompuesto.cs*",
+              "RelativeToolTip": "Practica6\\FabricaDeAlumnoCompuesto.cs*",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T11:27:38.676Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "FabricaDeAlumnosMuyEstudiosos.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica4\\FabricaDeAlumnosMuyEstudiosos.cs",
+              "RelativeDocumentMoniker": "Practica4\\FabricaDeAlumnosMuyEstudiosos.cs",
+              "ToolTip": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica4\\FabricaDeAlumnosMuyEstudiosos.cs",
+              "RelativeToolTip": "Practica4\\FabricaDeAlumnosMuyEstudiosos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwBUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:23:28.51Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "FabricaDeComparables.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica3\\FabricaDeComparables.cs",
+              "RelativeDocumentMoniker": "Practica3\\FabricaDeComparables.cs",
+              "ToolTip": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica3\\FabricaDeComparables.cs",
+              "RelativeToolTip": "Practica3\\FabricaDeComparables.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAqwAQAAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:26:23.875Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "AlumnoCompuesto.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica6\\AlumnoCompuesto.cs",
+              "RelativeDocumentMoniker": "Practica6\\AlumnoCompuesto.cs",
+              "ToolTip": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica6\\AlumnoCompuesto.cs",
+              "RelativeToolTip": "Practica6\\AlumnoCompuesto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-21T11:15:30.551Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
               "ToolTip": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Program.cs",
               "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAWwBYAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-05-17T21:30:52.778Z",
+              "WhenOpened": "2025-06-21T11:11:08.813Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "GeneradorDeDatosAleatorios.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica3\\GeneradorDeDatosAleatorios.cs",
+              "RelativeDocumentMoniker": "Practica3\\GeneradorDeDatosAleatorios.cs",
+              "ToolTip": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica3\\GeneradorDeDatosAleatorios.cs",
+              "RelativeToolTip": "Practica3\\GeneradorDeDatosAleatorios.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAxwBMAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:25:10.996Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "LectorDeDatos.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica3\\LectorDeDatos.cs",
+              "RelativeDocumentMoniker": "Practica3\\LectorDeDatos.cs",
+              "ToolTip": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Practica3\\LectorDeDatos.cs",
+              "RelativeToolTip": "Practica3\\LectorDeDatos.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABMAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:24:50.642Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "Manejador.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Manejador.cs",
+              "RelativeDocumentMoniker": "Manejador.cs",
+              "ToolTip": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\Manejador.cs",
+              "RelativeToolTip": "Manejador.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAQwA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:22:17.346Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ObtencionDeDatos.cs",
+              "DocumentMoniker": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\ObtencionDeDatos.cs",
+              "RelativeDocumentMoniker": "ObtencionDeDatos.cs",
+              "ToolTip": "C:\\Users\\Nico\\unaj\\Metodologia-1\\metodologia-1\\Practica7\\ObtencionDeDatos.cs",
+              "RelativeToolTip": "ObtencionDeDatos.cs",
+              "ViewState": "AgIAABcAAAAAAAAAAAAkwCcAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-06-20T03:21:45.233Z",
               "EditorCaption": ""
             }
           ]
